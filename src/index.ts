@@ -5,7 +5,7 @@ import { storage } from "./multerConfig";
 const upload = multer({ storage: storage });
 const app = express();
 
-app.use("/files", express.static("uploads"));
+
 
 //endpoint post de envio de arquivo
 app.post("/product-shopper", upload.single("envio de  arquivo"), (req, res) => {
